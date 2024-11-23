@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/horarioestaciones"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Título ajustado -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Consulta los Horarios de tu Estación!"
+            android:textColor="@color/purple"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Lista de estaciones con botones de consulta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- Apartado para cada estación con botón -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1: Bayovar"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Repite el bloque para cada estación -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2: Santa Rosa"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Repite esto para el resto de las estaciones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3: San Martin"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4: San Carlos"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5: Los Postes"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6: Los Jardines"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7: Pirámide del Sol"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8: Caja de Agua"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9: Prebítero Maestro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10: El Angel"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11: Miguel Grau"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12: Gamarra"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13: Arriola"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14: La Cultura"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15: San Borja Sur"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16: Angamos"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3: Cabitos"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18: Ayacucho"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19: Jorge Chávez"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20: San Juan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21: Atocongo"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22: Maria Auxiliadora"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23: Villa María "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24: Pumacahua"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25: Parque Industrial"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/estacion_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26: Villa El Salvador"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btn_consultar_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Continúa con el resto de estaciones... -->
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

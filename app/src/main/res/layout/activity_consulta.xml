@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondito"
+    tools:context=".Consulta_Activity">
+
+    <!-- Título -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horarios"
+        android:textColor="@color/purple"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Scroll para la lista de horarios -->
+    <ScrollView
+        android:id="@+id/scroll_horarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout_texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Aquí se llenará la lista de horarios dinámicamente -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargando horarios..."
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón de volver -->
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+</LinearLayout>

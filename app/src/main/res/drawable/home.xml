@@ -1,0 +1,34 @@
+<vector android:height="50dp" android:tint="#800080"
+    android:viewportHeight="24.0" android:viewportWidth="24.0"
+    android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Main train body with a rounded top (aerodynamic shape) -->
+    <path android:fillColor="#800080" android:pathData="M4,5a8,8 0 0 1 8,-3a8,8 0 0 1 8,3v12a1,1 0 0 1 -1,1H5a1,1 0 0 1 -1,-1z" />
+
+    <!-- Windows: Central large window -->
+    <path android:fillColor="#FFFFFF" android:pathData="M8,6h8v5H8z" />
+    <!-- Contorno de la ventana central -->
+    <path android:strokeColor="#000000" android:strokeWidth="1" android:pathData="M8,6h8v5H8z" fillColor="none"/>
+    <!-- Contorno interior de la ventana central -->
+    <path android:strokeColor="#000000" android:strokeWidth="0.5" android:pathData="M8,6h8v5H8z" fillColor="none"/>
+
+    <!-- Windows: Side small windows -->
+    <path android:fillColor="#FFFFFF" android:pathData="M6,7h2v3H6z M16,7h2v3h-2z" />
+    <!-- Contornos de las ventanas laterales -->
+    <path android:strokeColor="#000000" android:strokeWidth="1" android:pathData="M6,7h2v3H6z" fillColor="none"/>
+    <path android:strokeColor="#000000" android:strokeWidth="1" android:pathData="M16,7h2v3h-2z" fillColor="none"/>
+    <!-- Contornos interiores de las ventanas laterales -->
+    <path android:strokeColor="#000000" android:strokeWidth="0.5" android:pathData="M6,7h2v3H6z" fillColor="none"/>
+    <path android:strokeColor="#000000" android:strokeWidth="0.5" android:pathData="M16,7h2v3h-2z" fillColor="none"/>
+
+    <!-- Front lights (round headlights) -->
+    <path android:fillColor="#FFFF00" android:pathData="M6,13a1,1 0 1 1 0,2a1,1 0 1 1 0,-2z" />
+    <path android:fillColor="#FFFF00" android:pathData="M18,13a1,1 0 1 1 0,2a1,1 0 1 1 0,-2z" />
+
+    <!-- Bottom section of the train (detailed with connectors and base) -->
+    <path android:fillColor="#000000" android:pathData="M7,17h10v1H7z M8,18h8v1H8z" />
+
+    <!-- Train tracks (lines representing tracks under the train) -->
+    <path android:strokeColor="#000000" android:strokeWidth="0.5" android:pathData="M4,20h16 M4,21h16" />
+
+</vector>

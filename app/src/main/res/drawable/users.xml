@@ -1,0 +1,31 @@
+<vector
+    android:height="50dp"
+    android:tint="#800080"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0"
+    android:width="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cabeza del ícono de usuario (círculo) -->
+    <path
+        android:fillColor="#800080"
+        android:pathData="M12,2a5,5 0 1,1 -5,5a5,5 0 0,1 5,-5z" />
+
+    <!-- Cuerpo del ícono de usuario (rectángulo) -->
+    <path
+        android:fillColor="#800080"
+        android:pathData="M9,10h6v10H9z" />
+
+    <!-- Cuello del ícono de usuario (pequeño rectángulo) -->
+    <path
+        android:fillColor="#800080"
+        android:pathData="M10,9h4v1h-4z" />
+
+    <!-- Manos (rectángulos) -->
+    <path
+        android:fillColor="#800080"
+        android:pathData="M7,10h2v8H7z" />
+    <path
+        android:fillColor="#800080"
+        android:pathData="M15,10h2v8h-2z" />
+</vector>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondito"
+    tools:context=".RegisterActivity">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true">
+
+        <!-- LinearLayout to wrap the content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Línea 1 Metro de Lima"
+                android:textColor="@color/purple"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Registrarse"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextRegUsername"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegPassword"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegCardNumber"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nro de Tarjeta"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegFirstName"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegLastName"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegDNI"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="DNI"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextRegAge"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="342dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:text="REGISTRARSE"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewExistingUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="¿Ya tienes una cuenta?"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

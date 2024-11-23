@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvImporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importe"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNuevoSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Saldo"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSaldoAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Anterior"
+        android:textSize="16sp" />
+</LinearLayout>

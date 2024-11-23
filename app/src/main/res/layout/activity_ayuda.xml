@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondito"
+    tools:context=".AyudaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@drawable/top_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="AYUDA"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/view"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/perfil" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/white_background"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/black_background"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Pregunta Frecuentes"
+                                android:textAlignment="center"
+                                android:textColor="#ffffffff"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nrotarjetlb"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="¿Cómo hago mi recarga? \n\nPuedes realizar tu recarga a través del aplicativo, yendo a la opción Tarjeta y a Recargar Tarjeta, luego ingresas el monto en soles a recargar y cancelas la operación con tu tarjeta."
+                            android:textAlignment="center"
+                            android:textColor="#800080"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fechalb"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="¿Cómo podemos obtener la tarjeta medio de LÍNEA1?\n\nNecesitas acercarte presencialmente a una de las estación administrativas y presentar tu carnet universitario
+"
+                            android:textAlignment="center"
+                            android:textColor="#800080"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cvvlb"
+                            android:layout_width="13dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Elementos que no se pueden transportar en el sistema\n\n Objetos que superen los dos metros de altura, objetos explosivos, objetos punzocortantes y alimentos "
+                            android:textAlignment="center"
+                            android:textColor="#800080"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/montolb"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="¿Cómo podemos comunicarnos con LÍNEA1? \n\nPor nuestro canal de atención al cliente 0800-111-21 o de manera presencial de 6 am a 10 pm"
+                            android:textAlignment="center"
+                            android:textColor="#800080"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="#d9d9d9" />
+
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
